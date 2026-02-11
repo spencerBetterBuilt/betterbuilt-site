@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BetterBuilt Digital</title>
+    <link rel="stylesheet" href="./global.css" />
+  </head>
+  <body>
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-container">
+        <div class="logo">BetterBuilt<span> Digital</span></div>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#how-we-work">Process</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-label">Web Design & Development</div>
+        <h1>
+          Your Digital Presence, <br /><span class="highlight"
+            >Built Better</span
+          >
+        </h1>
+        <p>
+          We craft high-performance websites that don't just look good—they
+          drive results. From strategy to launch, we build digital experiences
+          that help your business thrive.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="cta-button">
+            Start Your Project
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M12 5v14M19 12l-7 7-7-7" />
+        </svg>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Stats Banner -->
+    <section class="stats-banner">
+      <div class="stats-container">
+        <div class="stat-item">
+          <div class="stat-number">50+</div>
+          <div class="stat-description">Projects Completed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">98%</div>
+          <div class="stat-description">Client Satisfaction</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">3.2x</div>
+          <div class="stat-description">Avg. Conversion Increase</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Services Section -->
+    <section id="services">
+      <div class="container">
+        <div style="text-align: center">
+          <div class="section-label">What We Do</div>
+          <h2 class="section-title">Complete Digital Solutions</h2>
+          <p class="section-description">
+            From concept to launch, we handle every aspect of your digital
+            presence with expertise and precision
+          </p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="8"
+                  y="12"
+                  width="48"
+                  height="36"
+                  rx="2"
+                  stroke="#FF6B00"
+                  stroke-width="2.5"
+                />
+                <path
+                  d="M8 20h48M16 16h4M24 16h4"
+                  stroke="#FF6B00"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+                <circle
+                  cx="20"
+                  cy="32"
+                  r="6"
+                  stroke="#FF6B00"
+                  stroke-width="2.5"
+                />
+                <path
+                  d="M30 28h16M30 34h12M30 40h14"
+                  stroke="#FF6B00"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3>Web Design & Development</h3>
+            <p>
+              Custom websites built with cutting-edge technology, optimized for
+              performance, and designed to convert visitors into customers.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="20"
+                  y="8"
+                  width="24"
+                  height="48"
+                  rx="3"
+                  stroke="#FF6B00"
+                  stroke-width="2.5"
+                />
+                <path
+                  d="M20 14h24M20 50h24"
+                  stroke="#FF6B00"
+                  stroke-width="2.5"
+                />
+                <circle cx="32" cy="52" r="1.5" fill="#FF6B00" />
+                <rect
+                  x="24"
+                  y="18"
+                  width="16"
+                  height="28"
+                  rx="1"
+                  stroke="#FF6B00"
+                  stroke-width="2"
+                />
+                <path
+                  d="M28 24l4 4 4-4M28 34h8M28 38h6"
+                  stroke="#FF6B00"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3>Mobile-First Design</h3>
+            <p>
+              Responsive designs that look and perform beautifully on every
+              device, ensuring seamless experiences for all users.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M32 8v16l12-8z" fill="#FF6B00" opacity="0.2" />
+                <path
+                  d="M32 8L44 16L32 24L20 16L32 8z"
+                  stroke="#FF6B00"
+                  stroke-width="2.5"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M20 16v16l12 8 12-8V16"
+                  stroke="#FF6B00"
+                  stroke-width="2.5"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M20 32l12 8 12-8M32 40v16"
+                  stroke="#FF6B00"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+                <circle
+                  cx="16"
+                  cy="48"
+                  r="4"
+                  stroke="#FF6B00"
+                  stroke-width="2"
+                />
+                <circle
+                  cx="48"
+                  cy="48"
+                  r="4"
+                  stroke="#FF6B00"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+            <h3>E-commerce Solutions</h3>
+            <p>
+              Powerful online stores with secure payment processing, inventory
+              management, and user-friendly shopping experiences.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="32"
+                  cy="32"
+                  r="20"
+                  stroke="#FF6B00"
+                  stroke-width="2.5"
+                />
+                <path
+                  d="M32 16v16l12 6"
+                  stroke="#FF6B00"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M12 32h8M44 32h8M32 12v8M32 44v8"
+                  stroke="#FF6B00"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <circle cx="32" cy="32" r="3" fill="#FF6B00" />
+              </svg>
+            </div>
+            <h3>Speed Optimization</h3>
+            <p>
+              Lightning-fast load times that improve user experience and boost
+              search engine rankings for better visibility.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 20L32 8L52 20v24L32 56L12 44V20z"
+                  stroke="#FF6B00"
+                  stroke-width="2.5"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M32 8v48M12 20l20 12 20-12M12 44l20-12 20 12"
+                  stroke="#FF6B00"
+                  stroke-width="1.5"
+                  opacity="0.5"
+                />
+                <circle
+                  cx="32"
+                  cy="32"
+                  r="8"
+                  stroke="#FF6B00"
+                  stroke-width="2.5"
+                />
+                <path
+                  d="M28 32l3 3 5-6"
+                  stroke="#FF6B00"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3>Security & Maintenance</h3>
+            <p>
+              Regular updates, security patches, and ongoing support to keep
+              your website secure and running smoothly.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M32 12L20 24v24l12 12 12-12V24L32 12z"
+                  stroke="#FF6B00"
+                  stroke-width="2.5"
+                  stroke-linejoin="round"
+                />
+                <circle
+                  cx="32"
+                  cy="36"
+                  r="8"
+                  stroke="#FF6B00"
+                  stroke-width="2.5"
+                />
+                <path
+                  d="M28 36l2 2 4-4"
+                  stroke="#FF6B00"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M32 12v12M20 24l8 8M44 24l-8 8"
+                  stroke="#FF6B00"
+                  stroke-width="2"
+                  opacity="0.5"
+                />
+              </svg>
+            </div>
+            <h3>SEO Optimization</h3>
+            <p>
+              Strategic optimization to improve search rankings, increase
+              organic traffic, and help customers find you online.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- How We Work Section - Timeline -->
+    <section id="how-we-work">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 4rem">
+          <div class="section-label">Our Process</div>
+          <h2 class="section-title">How We Work</h2>
+          <p class="section-description">
+            A proven methodology that delivers results from discovery to launch
+          </p>
+        </div>
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-number">01</div>
+            <div class="timeline-content">
+              <h3>Discovery & Strategy</h3>
+              <p>
+                We start by understanding your business, goals, and target
+                audience. Through in-depth research and competitive analysis, we
+                craft a strategic roadmap that aligns with your objectives and
+                sets the foundation for success.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-number">02</div>
+            <div class="timeline-content">
+              <h3>Design & Prototype</h3>
+              <p>
+                Our designers create stunning, user-centered interfaces that
+                reflect your brand identity. We develop interactive prototypes
+                to visualize the user experience and gather feedback before
+                moving to development.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-number">03</div>
+            <div class="timeline-content">
+              <h3>Development & Testing</h3>
+              <p>
+                Our developers bring the design to life with clean, efficient
+                code. We rigorously test across devices and browsers, ensuring
+                flawless functionality, optimal performance, and a seamless user
+                experience.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-number">04</div>
+            <div class="timeline-content">
+              <h3>Launch & Optimize</h3>
+              <p>
+                After final quality assurance, we launch your website and
+                monitor performance closely. We continuously analyze data,
+                gather insights, and make improvements to maximize results and
+                drive growth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 3rem">
+          <div class="section-label">FAQ</div>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-description">
+            Everything you need to know about working with us
+          </p>
+        </div>
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How long does it take to build a website?</span>
+              <svg
+                class="faq-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                Typical project timelines range from 4-8 weeks depending on
+                complexity. We'll provide a detailed timeline during our initial
+                consultation based on your specific requirements.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What platforms do you work with?</span>
+              <svg
+                class="faq-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                We specialize in custom solutions using modern frameworks
+                (React, Next.js, Vue), as well as popular platforms like
+                WordPress, Shopify, and Webflow. We'll recommend the best fit
+                for your needs.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Do you offer ongoing support after launch?</span>
+              <svg
+                class="faq-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                Yes! We offer flexible maintenance plans including updates,
+                security monitoring, content changes, and technical support to
+                ensure your website continues performing optimally.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What is your pricing structure?</span>
+              <svg
+                class="faq-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                We provide transparent, project-based pricing that includes
+                strategy, design, development, and initial optimization. No
+                hidden fees, no surprises.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Will I be able to update my website myself?</span>
+              <svg
+                class="faq-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                Absolutely. We build on user-friendly platforms and provide
+                training so you can make updates confidently. Ongoing support is
+                available if needed.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-container">
+          <div style="text-align: center">
+            <div class="section-label">Get In Touch</div>
+            <h2 class="section-title">Ready to build something better?</h2>
+            <p class="section-description">
+              Let's discuss your project and explore how we can help you succeed
+            </p>
+          </div>
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="john@example.com"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone (Optional)</label>
+              <input type="tel" id="phone" placeholder="(555) 123-4567" />
+            </div>
+            <div class="form-group">
+              <label for="message">Project Details</label>
+              <textarea
+                id="message"
+                placeholder="Tell us about your project, goals, and timeline..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-button cta-button">Send Message</button>
+          </form>
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <path d="m22 6-10 7L2 6" />
+              </svg>
+              <p>spencer@betterbuilt.digital</p>
+            </div>
+            <div class="contact-info-item">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+              <p>(832) 764-2556</p>
+            </div>
+            <div class="contact-info-item">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <p>Remote & Available</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">BetterBuilt<span> Digital</span></div>
+        <div class="footer-text">2026 BetterBuilt Digital.</div>
+      </div>
+    </footer>
+
+    <script defer src="./global.js"></script>
+  </body>
+</html>
