@@ -111,10 +111,3 @@ window.addEventListener("resize", () => {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 });
-
-// Form submission
-document.querySelector(".contact-form").addEventListener("submit", (e) => {
-  e.preventDefault();
-  alert("Thank you for your message! We will get back to you soon.");
-  e.target.reset();
-});
