@@ -22,7 +22,8 @@
   --bb-dark-line: rgba(255, 255, 255, 0.12);
   --bb-dark-muted: #a19c93;
   --bb-accent: #ff6b00;
-  --bb-accent-ink: #c24e00;
+  --bb-accent-ink: #b04600;
+  --bb-dark-placeholder: #8f8a82;
 
   --bb-radius-sm: 10px;
   --bb-radius: 18px;
@@ -73,9 +74,15 @@ a {
 }
 
 :focus-visible {
-  outline: 2px solid var(--bb-accent);
+  outline: 2px solid var(--bb-accent-ink);
   outline-offset: 3px;
   border-radius: 4px;
+}
+
+.contact :focus-visible,
+.price-panel :focus-visible,
+.t-dark:focus-visible {
+  outline-color: var(--bb-accent);
 }
 
 .skip-link {
@@ -1528,7 +1535,7 @@ section {
 }
 .field input::placeholder,
 .field textarea::placeholder {
-  color: #6d6962;
+  color: var(--bb-dark-placeholder);
 }
 .field input:focus,
 .field select:focus,
