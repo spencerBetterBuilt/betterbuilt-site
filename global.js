@@ -23,6 +23,19 @@ if (menuBtn && menu) {
   document.addEventListener("keydown", (e) => e.key === "Escape" && setMenu(false));
 }
 
+// Marquee: the markup holds one copy of each list (so crawlers read it once);
+// clone it three more times so the -50% loop is seamless
+document.querySelectorAll(".marquee-track").forEach((track) => {
+  const items = [...track.children];
+  for (let i = 0; i < 3; i++) {
+    items.forEach((el) => {
+      const copy = el.cloneNode(true);
+      copy.setAttribute("aria-hidden", "true");
+      track.appendChild(copy);
+    });
+  }
+});
+
 // FAQ accordion
 document.querySelectorAll(".faq-item").forEach((item, _, all) => {
   const q = item.querySelector(".faq-q");
