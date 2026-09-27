@@ -1,685 +1,468 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BetterBuilt Digital</title>
+    <title>BetterBuilt Digital | Websites & Marketing for Local Businesses and E-commerce</title>
+    <meta name="description" content="Websites, website management, and marketing for local service businesses and e-commerce brands in Conroe, The Woodlands, Montgomery, and Houston. New sites from $300/mo." />
+    <link rel="canonical" href="https://betterbuiltdigital.com/" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="BetterBuilt Digital | Websites & Marketing for Local Businesses and E-commerce" />
+    <meta property="og:description" content="Websites, website management, and marketing for local service businesses and e-commerce brands in Conroe, The Woodlands, Montgomery, and Houston. New sites from $300/mo." />
+    <meta property="og:url" content="https://betterbuiltdigital.com/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="./global.css" />
     <link rel="icon" type="image/png" href="./BetterBuild Favicon.png" />
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "BetterBuilt Digital",
+    "url": "https://betterbuiltdigital.com/",
+    "telephone": "+18327642556",
+    "email": "spencer@betterbuiltdigital.com",
+    "founder": {
+      "@type": "Person",
+      "name": "Spencer Foreman"
+    },
+    "description": "Website design, website management, and local marketing for service businesses and e-commerce brands.",
+    "priceRange": "From $300/mo",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "TX",
+      "addressCountry": "US"
+    },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Montgomery, TX"
+      },
+      {
+        "@type": "City",
+        "name": "Conroe, TX"
+      },
+      {
+        "@type": "City",
+        "name": "The Woodlands, TX"
+      },
+      {
+        "@type": "City",
+        "name": "Houston, TX"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Who will I actually be working with?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Me, Spencer. BetterBuilt is a one-person studio by design. No account managers or hand-offs: the person you talk to is the person building and maintaining your site."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "I run a local service business. How does pricing work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Local plans start at $300/month and include a brand-new website plus ongoing management. The exact price depends on the size of the build. See the local plan \u2192"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "I run an e-commerce brand. What can you help with?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Store management, speed and performance, conversion improvements, and day-to-day site operations. It's what I've done for a national publisher for almost four years. See e-commerce services \u2192"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to launch a new site?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most local service sites launch within a few weeks of our kickoff call. Larger builds and online stores take longer, and you'll get a clear timeline before we start."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where are you located?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Montgomery County, Texas. I work with businesses in Conroe, The Woodlands, Montgomery, and across the Houston area, and I'm happy to meet in person locally."
+        }
+      }
+    ]
+  }
+]
+    </script>
   </head>
   <body>
-    <canvas id="particles-canvas"></canvas>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Navigation -->
-    <nav>
-      <div class="nav-container">
-        <div class="logo">BetterBuilt<span> Digital</span></div>
-        <button class="menu-toggle" id="menuToggle">☰</button>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#how-we-work">Process</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-        </ul>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="./index.html" aria-label="BetterBuilt Digital home">BetterBuilt<sup>®</sup></a>
+        <nav class="header-nav" aria-label="Main">
+          <a href="./local-services.html" class="hide-sm">Local Businesses</a>
+          <a href="./ecommerce.html" class="hide-sm">E-commerce</a>
+          <a href="./index.html#about" class="hide-md">About</a>
+          <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu">
+            <span class="menu-label">Menu</span><span class="bars" aria-hidden="true"></span>
+          </button>
+        </nav>
       </div>
-    </nav>
+    </header>
 
-    <!-- Hero Section -->
+    <div class="menu-overlay" id="menu" aria-hidden="true">
+      <ul class="menu-main">
+        <li><a href="./index.html"><span>01</span>Home</a></li>
+        <li><a href="./local-services.html"><span>02</span>Local Businesses</a></li>
+        <li><a href="./ecommerce.html"><span>03</span>E-commerce</a></li>
+        <li><a href="./index.html#about"><span>04</span>About</a></li>
+        <li><a href="#contact"><span>05</span>Free Site Review</a></li>
+      </ul>
+      <div class="menu-side">
+        <div>
+          <h4>Service Areas</h4>
+          <ul>
+            <li><a href="./web-design-montgomery-tx.html">Montgomery</a></li>
+            <li><a href="./web-design-conroe-tx.html">Conroe</a></li>
+            <li><a href="./web-design-the-woodlands-tx.html">The Woodlands</a></li>
+            <li><a href="./web-design-houston-tx.html">Houston</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+18327642556">(832) 764-2556</a></li>
+            <li><a href="mailto:spencer@betterbuiltdigital.com">spencer@betterbuiltdigital.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <main id="main">
     <section class="hero">
-      <div class="hero-content">
-        <div class="hero-label">Web Design & Development</div>
-        <h1>
-          Your Digital Presence, <br /><span class="highlight"
-            >Built Better</span
-          >
-        </h1>
-        <p>
-          We craft high-performance websites that don't just look good—they
-          drive results. From strategy to launch, we build digital experiences
-          that help your business thrive.
-        </p>
-        <div class="hero-cta">
-          <a href="#contact" class="cta-button">
-            Start Your Project
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path d="M5 12h14M12 5l7 7-7 7" />
+      <div class="wrap">
+        <div class="eyebrow">Web design &amp; marketing · Montgomery County, Texas</div>
+        <div class="hero-grid">
+          <div>
+            <h1 class="display">Websites that bring in business.</h1>
+            <p class="lead">I'm Spencer. I build, manage, and market websites for local service businesses and e-commerce brands, so you can get back to running yours.</p>
+            <div class="hero-actions">
+              <a class="btn" href="./local-services.html">Local business websites <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+              <a class="btn btn--ghost" href="./ecommerce.html">E-commerce marketing</a>
+            </div>
+          </div>
+          <a class="badge" href="#work" aria-label="See What I Do">
+            <svg class="ring" viewBox="0 0 148 148" aria-hidden="true">
+              <defs><path id="circ" d="M74,74 m-58,0 a58,58 0 1,1 116,0 a58,58 0 1,1 -116,0"/></defs>
+              <text><textPath href="#circ">See what I do · See what I do · </textPath></text>
             </svg>
+            <span class="badge-core"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 4v16M5 13l7 7 7-7"/></svg></span>
+          </a>
+        </div>
+
+        <div class="showcase reveal" aria-label="Example of a local service website build">
+          <span class="showcase-tag">Example build · Fictional brand</span>
+          <span class="showcase-price">Website + management from <b>$300/mo</b></span>
+          <div class="browser">
+            <div class="browser-bar"><i></i><i></i><i></i><span class="url">pineywoodroofing.com</span></div>
+            <div class="demo">
+              <div class="demo-copy">
+                <div class="demo-nav"><b>PINEYWOOD ROOFING CO.</b><span>Services · Areas · Reviews</span><span class="demo-call">Call now</span></div>
+                <div class="demo-kicker">Conroe · The Woodlands · Montgomery</div>
+                <div class="demo-h">Roof repair &amp; replacement you can count on.</div>
+                <div class="demo-p">Free inspections, straight answers, and a crew that shows up when we say we will.</div>
+                <div class="demo-actions"><span class="demo-btn">Get a free quote</span><span class="demo-btn demo-btn--o">(936) 555-0142</span></div>
+                <div class="demo-stars"><b>★★★★★</b> 4.9 on Google</div>
+              </div>
+              <div class="demo-art" aria-hidden="true">
+                <div class="sun"></div>
+                <div class="roof"></div>
+                <div class="quote-card"><b>Request a free inspection</b><div class="field"></div><div class="field"></div><div class="field short"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="phone" aria-hidden="true">
+            <div class="phone-screen">
+              <div class="p-h">Roof repair you can count on.</div>
+              <div class="p-line"></div><div class="p-line" style="width:70%"></div>
+              <div class="p-img"></div>
+              <div class="p-line"></div>
+              <div class="p-call">Tap to call</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="work">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <div>
+            <div class="eyebrow">What I do</div>
+            <h2 class="h2">Two kinds of businesses.<br />One standard.</h2>
+          </div>
+          <p class="lead" style="max-width:28rem">Whether customers call you or check out online, the job is the same: a fast site that turns visitors into revenue, and someone who keeps it that way.</p>
+        </div>
+        <div class="tiles">
+          <a class="tile tile--big reveal" href="./local-services.html">
+            <div class="tile-media t-orange">
+              <div class="tile-top"><span>LOCAL SERVICE BUSINESSES</span><span class="tile-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+              <div>
+                <div class="big-num">$300<small>/mo</small></div>
+                <ul class="tile-list" style="margin-top:1.5rem">
+                  <li>Brand-new custom website</li>
+                  <li>Hosting, security &amp; monthly updates</li>
+                  <li>Local SEO &amp; Google Business Profile help</li>
+                  <li>No big upfront bill</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tile-cap"><div class="k">Roofers · HVAC · Plumbers · Landscapers</div><div class="t">A brand-new website for as low as $300/month</div></div>
+          </a>
+          <a class="tile reveal" href="./ecommerce.html">
+            <div class="tile-media t-dark">
+              <div class="tile-top"><span>E-COMMERCE</span><span class="tile-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+              <div class="tile-word">Run by someone who's done it at scale.</div>
+            </div>
+            <div class="tile-cap"><div class="k">Online brands</div><div class="t">Store management, speed &amp; conversion</div></div>
+          </a>
+          <a class="tile reveal" href="./local-services.html#included">
+            <div class="tile-media t-sky">
+              <div class="tile-top"><span>GOOGLE BUSINESS PROFILE</span><span class="tile-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+              <div class="tile-word">Show up in the map pack.</div>
+            </div>
+            <div class="tile-cap"><div class="k">Local search</div><div class="t">Profile setup, cleanup &amp; management</div></div>
+          </a>
+          <a class="tile reveal" href="./local-services.html#included">
+            <div class="tile-media t-sand">
+              <div class="tile-top"><span>WEBSITE MANAGEMENT</span><span class="tile-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+              <div class="tile-word">Text me a change. It's done.</div>
+            </div>
+            <div class="tile-cap"><div class="k">Included in every local plan</div><div class="t">Updates, hosting, security &amp; speed</div></div>
+          </a>
+          <a class="tile reveal" href="#contact">
+            <div class="tile-media t-tan">
+              <div class="tile-top"><span>FREE SITE REVIEW</span><span class="tile-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+              <div class="tile-word">See what your site is costing you.</div>
+            </div>
+            <div class="tile-cap"><div class="k">No obligation</div><div class="t">A 20-minute look at your site and Google presence</div></div>
           </a>
         </div>
       </div>
-      <div class="scroll-indicator">
-        <svg
-          width="32"
-          height="32"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <path d="M12 5v14M19 12l-7 7-7-7" />
-        </svg>
-      </div>
     </section>
 
-    <div class="section-divider"></div>
-
-    <!-- Stats Banner -->
-    <section class="stats-banner">
-      <div class="stats-container">
-        <div class="stat-item">
-          <div class="stat-number">50+</div>
-          <div class="stat-description">Projects Completed</div>
+    <section class="sec sec--tight">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <div>
+            <div class="eyebrow">Track record</div>
+            <h2 class="h2">Experience you can check.</h2>
+          </div>
+          <p class="lead" style="max-width:30rem">The same person who manages the online store for a national children's book publisher builds and looks after your site.</p>
         </div>
-        <div class="stat-item">
-          <div class="stat-number">98%</div>
-          <div class="stat-description">Client Satisfaction</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">3.2x</div>
-          <div class="stat-description">Avg. Conversion Increase</div>
+        <div class="stats reveal">
+          <div class="stat"><div class="stat-num">5<sup>+</sup></div><div class="stat-label">Years building websites</div></div>
+          <div class="stat"><div class="stat-num">~4<sup></sup></div><div class="stat-label">Years running e-commerce for a national publisher</div></div>
+          <div class="stat"><div class="stat-num">2<sup>x</sup></div><div class="stat-label">Faster site speed delivered on that store</div></div>
+          <div class="stat"><div class="stat-num">$300<sup></sup></div><div class="stat-label">Per month for a new site + management, to start</div></div>
         </div>
       </div>
     </section>
 
-    <div class="section-divider"></div>
-
-    <!-- Services Section -->
-    <section id="services">
-      <div class="container">
-        <div style="text-align: center">
-          <div class="section-label">What We Do</div>
-          <h2 class="section-title">Complete Digital Solutions</h2>
-          <p class="section-description">
-            From concept to launch, we handle every aspect of your digital
-            presence with expertise and precision
-          </p>
+    <section class="sec sec--white" id="about">
+      <div class="wrap">
+        <div class="reveal">
+          <div class="eyebrow">About</div>
+          <h2 class="h2" style="max-width:18ch">Clear thinking. Honest pricing. Built right.</h2>
         </div>
-        <div class="services-grid">
-          <div class="service-card">
-            <div class="service-icon">
-              <svg
-                viewBox="0 0 64 64"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  x="8"
-                  y="12"
-                  width="48"
-                  height="36"
-                  rx="2"
-                  stroke="#FF6B00"
-                  stroke-width="2.5"
-                />
-                <path
-                  d="M8 20h48M16 16h4M24 16h4"
-                  stroke="#FF6B00"
-                  stroke-width="2.5"
-                  stroke-linecap="round"
-                />
-                <circle
-                  cx="20"
-                  cy="32"
-                  r="6"
-                  stroke="#FF6B00"
-                  stroke-width="2.5"
-                />
-                <path
-                  d="M30 28h16M30 34h12M30 40h14"
-                  stroke="#FF6B00"
-                  stroke-width="2.5"
-                  stroke-linecap="round"
-                />
-              </svg>
-            </div>
-            <h3>Web Design & Development</h3>
-            <p>
-              Custom websites built with cutting-edge technology, optimized for
-              performance, and designed to convert visitors into customers.
-            </p>
+        <div class="cols">
+          <div class="reveal">
+            <p>For almost four years I've managed the online store for a <strong>national children's book publisher</strong>: product launches, site updates, performance, and the day-to-day work of keeping a high-traffic store running. Along the way I <strong>doubled the site's speed</strong>.</p>
+            <p>Before that, and alongside it, I've spent more than five years building websites for businesses of every size.</p>
           </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <svg
-                viewBox="0 0 64 64"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  x="20"
-                  y="8"
-                  width="24"
-                  height="48"
-                  rx="3"
-                  stroke="#FF6B00"
-                  stroke-width="2.5"
-                />
-                <path
-                  d="M20 14h24M20 50h24"
-                  stroke="#FF6B00"
-                  stroke-width="2.5"
-                />
-                <circle cx="32" cy="52" r="1.5" fill="#FF6B00" />
-                <rect
-                  x="24"
-                  y="18"
-                  width="16"
-                  height="28"
-                  rx="1"
-                  stroke="#FF6B00"
-                  stroke-width="2"
-                />
-                <path
-                  d="M28 24l4 4 4-4M28 34h8M28 38h6"
-                  stroke="#FF6B00"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-              </svg>
-            </div>
-            <h3>Mobile-First Design</h3>
-            <p>
-              Responsive designs that look and perform beautifully on every
-              device, ensuring seamless experiences for all users.
-            </p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <svg
-                viewBox="0 0 64 64"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M32 8v16l12-8z" fill="#FF6B00" opacity="0.2" />
-                <path
-                  d="M32 8L44 16L32 24L20 16L32 8z"
-                  stroke="#FF6B00"
-                  stroke-width="2.5"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M20 16v16l12 8 12-8V16"
-                  stroke="#FF6B00"
-                  stroke-width="2.5"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M20 32l12 8 12-8M32 40v16"
-                  stroke="#FF6B00"
-                  stroke-width="2.5"
-                  stroke-linecap="round"
-                />
-                <circle
-                  cx="16"
-                  cy="48"
-                  r="4"
-                  stroke="#FF6B00"
-                  stroke-width="2"
-                />
-                <circle
-                  cx="48"
-                  cy="48"
-                  r="4"
-                  stroke="#FF6B00"
-                  stroke-width="2"
-                />
-              </svg>
-            </div>
-            <h3>E-commerce Solutions</h3>
-            <p>
-              Powerful online stores with secure payment processing, inventory
-              management, and user-friendly shopping experiences.
-            </p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <svg
-                viewBox="0 0 64 64"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle
-                  cx="32"
-                  cy="32"
-                  r="20"
-                  stroke="#FF6B00"
-                  stroke-width="2.5"
-                />
-                <path
-                  d="M32 16v16l12 6"
-                  stroke="#FF6B00"
-                  stroke-width="2.5"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M12 32h8M44 32h8M32 12v8M32 44v8"
-                  stroke="#FF6B00"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-                <circle cx="32" cy="32" r="3" fill="#FF6B00" />
-              </svg>
-            </div>
-            <h3>Speed Optimization</h3>
-            <p>
-              Lightning-fast load times that improve user experience and boost
-              search engine rankings for better visibility.
-            </p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <svg
-                viewBox="0 0 64 64"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 20L32 8L52 20v24L32 56L12 44V20z"
-                  stroke="#FF6B00"
-                  stroke-width="2.5"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M32 8v48M12 20l20 12 20-12M12 44l20-12 20 12"
-                  stroke="#FF6B00"
-                  stroke-width="1.5"
-                  opacity="0.5"
-                />
-                <circle
-                  cx="32"
-                  cy="32"
-                  r="8"
-                  stroke="#FF6B00"
-                  stroke-width="2.5"
-                />
-                <path
-                  d="M28 32l3 3 5-6"
-                  stroke="#FF6B00"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-            <h3>Security & Maintenance</h3>
-            <p>
-              Regular updates, security patches, and ongoing support to keep
-              your website secure and running smoothly.
-            </p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <svg
-                viewBox="0 0 64 64"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M32 12L20 24v24l12 12 12-12V24L32 12z"
-                  stroke="#FF6B00"
-                  stroke-width="2.5"
-                  stroke-linejoin="round"
-                />
-                <circle
-                  cx="32"
-                  cy="36"
-                  r="8"
-                  stroke="#FF6B00"
-                  stroke-width="2.5"
-                />
-                <path
-                  d="M28 36l2 2 4-4"
-                  stroke="#FF6B00"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M32 12v12M20 24l8 8M44 24l-8 8"
-                  stroke="#FF6B00"
-                  stroke-width="2"
-                  opacity="0.5"
-                />
-              </svg>
-            </div>
-            <h3>SEO Optimization</h3>
-            <p>
-              Strategic optimization to improve search rankings, increase
-              organic traffic, and help customers find you online.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="section-divider"></div>
-
-    <!-- How We Work Section - Timeline -->
-    <section id="how-we-work">
-      <div class="container">
-        <div style="text-align: center; margin-bottom: 4rem">
-          <div class="section-label">Our Process</div>
-          <h2 class="section-title">How We Work</h2>
-          <p class="section-description">
-            A proven methodology that delivers results from discovery to launch
-          </p>
-        </div>
-        <div class="timeline-container">
-          <div class="timeline-line"></div>
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-number">01</div>
-            <div class="timeline-content">
-              <h3>Discovery & Strategy</h3>
-              <p>
-                We start by understanding your business, goals, and target
-                audience. Through in-depth research and competitive analysis, we
-                craft a strategic roadmap that aligns with your objectives and
-                sets the foundation for success.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-number">02</div>
-            <div class="timeline-content">
-              <h3>Design & Prototype</h3>
-              <p>
-                Our designers create stunning, user-centered interfaces that
-                reflect your brand identity. We develop interactive prototypes
-                to visualize the user experience and gather feedback before
-                moving to development.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-number">03</div>
-            <div class="timeline-content">
-              <h3>Development & Testing</h3>
-              <p>
-                Our developers bring the design to life with clean, efficient
-                code. We rigorously test across devices and browsers, ensuring
-                flawless functionality, optimal performance, and a seamless user
-                experience.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-number">04</div>
-            <div class="timeline-content">
-              <h3>Launch & Optimize</h3>
-              <p>
-                After final quality assurance, we launch your website and
-                monitor performance closely. We continuously analyze data,
-                gather insights, and make improvements to maximize results and
-                drive growth.
-              </p>
+          <div class="reveal">
+            <p>BetterBuilt brings that same standard to local businesses here at home. Your site is built and maintained by someone who has run a real store with real revenue on the line, <strong>not handed off to a junior designer</strong> or a template factory.</p>
+            <p>When you need something changed, you text me. When something breaks, I fix it. That's the whole idea.</p>
+            <div class="signature">
+              <div class="mono-avatar" aria-hidden="true">SF</div>
+              <div><b>Spencer Foreman</b><span>Founder, BetterBuilt Digital</span></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="section-divider"></div>
-
-    <!-- FAQ Section -->
-    <section id="faq">
-      <div class="container">
-        <div style="text-align: center; margin-bottom: 3rem">
-          <div class="section-label">FAQ</div>
-          <h2 class="section-title">Frequently Asked Questions</h2>
-          <p class="section-description">
-            Everything you need to know about working with us
-          </p>
+    <section class="sec" id="process">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <div>
+            <div class="eyebrow">How it works</div>
+            <h2 class="h2">Simple from the first call.</h2>
+          </div>
+          <p class="lead" style="max-width:26rem">No jargon, no 40-page proposals. Hover a step to see what happens.</p>
         </div>
-        <div class="faq-container">
-          <div class="faq-item">
-            <button class="faq-question">
-              <span>How long does it take to build a website?</span>
-              <svg
-                class="faq-icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path d="M6 9l6 6 6-6" />
-              </svg>
-            </button>
-            <div class="faq-answer">
-              <div class="faq-answer-content">
-                Typical project timelines range from 4-8 weeks depending on
-                complexity. We'll provide a detailed timeline during our initial
-                consultation based on your specific requirements.
-              </div>
+        <div class="pillars reveal">
+          <div class="pillar" tabindex="0">
+            <span class="pillar-title">Review</span>
+            <span class="pillar-num">Ø1</span>
+            <div class="pillar-body">
+              <span class="pillar-num">Ø1</span>
+              <h3>Free site review</h3>
+              <p>A short call. I look at your current site and Google presence, show you what's costing you customers, and recommend the right plan.</p>
             </div>
           </div>
-          <div class="faq-item">
-            <button class="faq-question">
-              <span>What platforms do you work with?</span>
-              <svg
-                class="faq-icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path d="M6 9l6 6 6-6" />
-              </svg>
-            </button>
-            <div class="faq-answer">
-              <div class="faq-answer-content">
-                We specialize in custom solutions using modern frameworks
-                (React, Next.js, Vue), as well as popular platforms like
-                WordPress, Shopify, and Webflow. We'll recommend the best fit
-                for your needs.
-              </div>
+          <div class="pillar" tabindex="0">
+            <span class="pillar-title">Build</span>
+            <span class="pillar-num">Ø2</span>
+            <div class="pillar-body">
+              <span class="pillar-num">Ø2</span>
+              <h3>Design &amp; build</h3>
+              <p>I write, design, and build your site around the services you want more of. You review everything before it goes live.</p>
             </div>
           </div>
-          <div class="faq-item">
-            <button class="faq-question">
-              <span>Do you offer ongoing support after launch?</span>
-              <svg
-                class="faq-icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path d="M6 9l6 6 6-6" />
-              </svg>
-            </button>
-            <div class="faq-answer">
-              <div class="faq-answer-content">
-                Yes! We offer flexible maintenance plans including updates,
-                security monitoring, content changes, and technical support to
-                ensure your website continues performing optimally.
-              </div>
+          <div class="pillar" tabindex="0">
+            <span class="pillar-title">Launch</span>
+            <span class="pillar-num">Ø3</span>
+            <div class="pillar-body">
+              <span class="pillar-num">Ø3</span>
+              <h3>Launch</h3>
+              <p>Hosting, domain, forms, tracking, and search setup, all handled. You don't have to touch a thing.</p>
             </div>
           </div>
-          <div class="faq-item">
-            <button class="faq-question">
-              <span>What is your pricing structure?</span>
-              <svg
-                class="faq-icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path d="M6 9l6 6 6-6" />
-              </svg>
-            </button>
-            <div class="faq-answer">
-              <div class="faq-answer-content">
-                We provide transparent, project-based pricing that includes
-                strategy, design, development, and initial optimization. No
-                hidden fees, no surprises.
-              </div>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question">
-              <span>Will I be able to update my website myself?</span>
-              <svg
-                class="faq-icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path d="M6 9l6 6 6-6" />
-              </svg>
-            </button>
-            <div class="faq-answer">
-              <div class="faq-answer-content">
-                Absolutely. We build on user-friendly platforms and provide
-                training so you can make updates confidently. Ongoing support is
-                available if needed.
-              </div>
+          <div class="pillar" tabindex="0">
+            <span class="pillar-title">Manage</span>
+            <span class="pillar-num">Ø4</span>
+            <div class="pillar-body">
+              <span class="pillar-num">Ø4</span>
+              <h3>Manage &amp; grow</h3>
+              <p>Every month I keep your site updated, fast, and secure, and look for ways to bring in more calls.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="section-divider"></div>
+    <section class="sec sec--tight" aria-label="Built for">
+      <div class="wrap"><div class="eyebrow">Built for</div></div>
+      <div class="marquee"><div class="marquee-track"><span>Roofers</span><span>HVAC</span><span>Plumbers</span><span>Electricians</span><span>Landscapers</span><span>Pool Service</span><span>Pressure Washing</span><span>Remodelers</span><span>Roofers</span><span>HVAC</span><span>Plumbers</span><span>Electricians</span><span>Landscapers</span><span>Pool Service</span><span>Pressure Washing</span><span>Remodelers</span><span>Roofers</span><span>HVAC</span><span>Plumbers</span><span>Electricians</span><span>Landscapers</span><span>Pool Service</span><span>Pressure Washing</span><span>Remodelers</span><span>Roofers</span><span>HVAC</span><span>Plumbers</span><span>Electricians</span><span>Landscapers</span><span>Pool Service</span><span>Pressure Washing</span><span>Remodelers</span></div></div>
+      <div class="marquee marquee--rev"><div class="marquee-track"><span>Painters</span><span>Fencing</span><span>Cleaning Services</span><span>Pest Control</span><span>Auto Repair</span><span>Garage Doors</span><span>Tree Service</span><span>Foundation Repair</span><span>Painters</span><span>Fencing</span><span>Cleaning Services</span><span>Pest Control</span><span>Auto Repair</span><span>Garage Doors</span><span>Tree Service</span><span>Foundation Repair</span><span>Painters</span><span>Fencing</span><span>Cleaning Services</span><span>Pest Control</span><span>Auto Repair</span><span>Garage Doors</span><span>Tree Service</span><span>Foundation Repair</span><span>Painters</span><span>Fencing</span><span>Cleaning Services</span><span>Pest Control</span><span>Auto Repair</span><span>Garage Doors</span><span>Tree Service</span><span>Foundation Repair</span></div></div>
+    </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="container">
-        <div class="contact-container">
-          <div style="text-align: center">
-            <div class="section-label">Get In Touch</div>
-            <h2 class="section-title">Ready to build something better?</h2>
-            <p class="section-description">
-              Let's discuss your project and explore how we can help you succeed
-            </p>
+    <section class="sec sec--white" id="faq">
+      <div class="wrap faq-grid">
+        <div class="reveal">
+          <div class="eyebrow">FAQ</div>
+          <h2 class="h2">Straight answers.</h2>
+        </div>
+        <div class="faq-list reveal">
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false"><span>Who will I actually be working with?</span><span class="plus" aria-hidden="true"></span></button>
+              <div class="faq-a"><div><p>Me, Spencer. BetterBuilt is a one-person studio by design. No account managers or hand-offs: the person you talk to is the person building and maintaining your site.</p></div></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false"><span>I run a local service business. How does pricing work?</span><span class="plus" aria-hidden="true"></span></button>
+              <div class="faq-a"><div><p>Local plans start at $300/month and include a brand-new website plus ongoing management. The exact price depends on the size of the build. <a href="./local-services.html" >See the local plan →</a></p></div></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false"><span>I run an e-commerce brand. What can you help with?</span><span class="plus" aria-hidden="true"></span></button>
+              <div class="faq-a"><div><p>Store management, speed and performance, conversion improvements, and day-to-day site operations. It's what I've done for a national publisher for almost four years. <a href="./ecommerce.html" >See e-commerce services →</a></p></div></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false"><span>How long does it take to launch a new site?</span><span class="plus" aria-hidden="true"></span></button>
+              <div class="faq-a"><div><p>Most local service sites launch within a few weeks of our kickoff call. Larger builds and online stores take longer, and you'll get a clear timeline before we start.</p></div></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false"><span>Where are you located?</span><span class="plus" aria-hidden="true"></span></button>
+              <div class="faq-a"><div><p>Montgomery County, Texas. I work with businesses in Conroe, The Woodlands, Montgomery, and across the Houston area, and I'm happy to meet in person locally.</p></div></div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <h2 class="display reveal">Let's talk plainly.</h2>
+        <p class="contact-sub reveal">Tell me about your business. I'll review your current site and Google presence for free and get back to you within one business day.</p>
+        <div class="contact-grid">
+          <div class="contact-details reveal">
+            <div class="label">Email</div>
+            <a class="big-link" href="mailto:spencer@betterbuiltdigital.com">spencer@betterbuiltdigital.com</a>
+            <div class="label">Call or text</div>
+            <a class="big-link" href="tel:+18327642556">(832) 764-2556</a>
+            <div class="label">Based in</div>
+            <p>Montgomery County, Texas. Serving Conroe, The Woodlands, Montgomery &amp; Greater Houston.</p>
           </div>
-          <form
-            class="contact-form"
-            action="https://formspree.io/f/mrearyjw"
-            method="POST"
-          >
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  placeholder="John Doe"
-                  name="name"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="john@example.com"
-                  required
-                />
-              </div>
+          <form class="form reveal" action="https://formspree.io/f/mrearyjw" method="POST">
+            <div class="form-2">
+              <div class="field"><label for="name">Name</label><input id="name" name="name" autocomplete="name" placeholder="Jane Smith" required /></div>
+              <div class="field"><label for="email">Email</label><input id="email" type="email" name="email" autocomplete="email" placeholder="jane@yourbusiness.com" required /></div>
             </div>
-            <div class="form-group">
-              <label for="phone">Phone (Optional)</label>
-              <input
-                type="tel"
-                id="phone"
-                placeholder="(555) 123-4567"
-                name="phone-number"
-              />
+            <div class="form-2">
+              <div class="field"><label for="phone">Phone</label><input id="phone" type="tel" name="phone-number" autocomplete="tel" placeholder="(555) 123-4567" /></div>
+              <div class="field"><label for="biz">Type of business</label><select id="biz" name="business-type"><option selected>Local service business</option><option>E-commerce brand</option><option>Something else</option></select></div>
             </div>
-            <div class="form-group">
-              <label for="message">Project Details</label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Tell us about your project, goals, and timeline..."
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="submit-button cta-button">
-              Send Message
-            </button>
+            <div class="field"><label for="site">Current website (if any)</label><input id="site" name="current-website" placeholder="yourbusiness.com" /></div>
+            <div class="field"><label for="msg">What do you need help with?</label><textarea id="msg" name="message" placeholder="e.g. I'm a roofer in Conroe. My site is outdated and I'm not getting calls from Google." required></textarea></div>
+            <button class="btn btn--light" type="submit">Get my free review <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></button>
           </form>
-          <div class="contact-info">
-            <div class="contact-info-item">
-              <svg
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-                />
-                <path d="m22 6-10 7L2 6" />
-              </svg>
-              <p>spencer@betterbuilt.digital</p>
-            </div>
-            <div class="contact-info-item">
-              <svg
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-                />
-              </svg>
-              <p>(832) 764-2556</p>
-            </div>
-            <div class="contact-info-item">
-              <svg
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                <circle cx="12" cy="10" r="3" />
-              </svg>
-              <p>Remote & Available</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
+    </main>
 
-    <!-- Footer -->
-    <footer>
-      <div class="footer-container">
-        <div class="footer-logo">BetterBuilt<span> Digital</span></div>
-        <div class="footer-text">2026 BetterBuilt Digital.</div>
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="eyebrow">Services</div>
+        <h2 class="h2">Everything I do for your business.</h2>
+        <div class="footer-cols">
+          <div>
+            <h4>Local businesses</h4>
+            <ul>
+              <li><a href="./local-services.html">New website from $300/mo</a></li>
+              <li><a href="./local-services.html#included">Website management</a></li>
+              <li><a href="./local-services.html#included">Hosting &amp; security</a></li>
+              <li><a href="./local-services.html#included">Local SEO</a></li>
+              <li><a href="./local-services.html#included">Google Business Profile</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>E-commerce</h4>
+            <ul>
+              <li><a href="./ecommerce.html">Store management</a></li>
+              <li><a href="./ecommerce.html#services">Speed &amp; performance</a></li>
+              <li><a href="./ecommerce.html#services">Conversion improvements</a></li>
+              <li><a href="./ecommerce.html#services">Launch &amp; campaign support</a></li>
+              <li><a href="./ecommerce.html#services">Custom builds &amp; redesigns</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Service areas</h4>
+            <ul>
+            <li><a href="./web-design-montgomery-tx.html">Web design in Montgomery, TX</a></li>
+            <li><a href="./web-design-conroe-tx.html">Web design in Conroe, TX</a></li>
+            <li><a href="./web-design-the-woodlands-tx.html">Web design in The Woodlands, TX</a></li>
+            <li><a href="./web-design-houston-tx.html">Web design in Houston, TX</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 BetterBuilt Digital · Montgomery County, TX</span>
+          <span><a href="tel:+18327642556" style="text-decoration:none">(832) 764-2556</a> · <a href="mailto:spencer@betterbuiltdigital.com" style="text-decoration:none">spencer@betterbuiltdigital.com</a></span>
+        </div>
       </div>
     </footer>
+
+    <a class="float-cta" href="#contact"><span class="dot" aria-hidden="true"></span>Free site review</a>
 
     <script defer src="./global.js"></script>
   </body>

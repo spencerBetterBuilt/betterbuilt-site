@@ -1,113 +1,76 @@
-// Mobile Menu Toggle
-const menuToggle = document.getElementById("menuToggle");
-const navLinks = document.getElementById("navLinks");
+document.documentElement.classList.remove("no-js");
 
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
+// Header border on scroll
+const header = document.querySelector(".site-header");
+const onScroll = () => header && header.classList.toggle("scrolled", window.scrollY > 10);
+onScroll();
+window.addEventListener("scroll", onScroll, { passive: true });
 
-// Close mobile menu when clicking a link
-document.querySelectorAll(".nav-links a").forEach((link) => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("active");
-  });
-});
+// Full-screen menu
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("menu");
+function setMenu(open) {
+  document.body.classList.toggle("menu-open", open);
+  if (menuBtn) {
+    menuBtn.setAttribute("aria-expanded", String(open));
+    menuBtn.querySelector(".menu-label").textContent = open ? "Close" : "Menu";
+  }
+  if (menu) menu.setAttribute("aria-hidden", String(!open));
+}
+if (menuBtn && menu) {
+  menuBtn.addEventListener("click", () => setMenu(!document.body.classList.contains("menu-open")));
+  menu.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => setMenu(false)));
+  document.addEventListener("keydown", (e) => e.key === "Escape" && setMenu(false));
+}
 
-// FAQ Accordion
-const faqItems = document.querySelectorAll(".faq-item");
-faqItems.forEach((item) => {
-  const question = item.querySelector(".faq-question");
-  question.addEventListener("click", () => {
-    const isActive = item.classList.contains("active");
-
-    // Close all FAQ items
-    faqItems.forEach((faq) => faq.classList.remove("active"));
-
-    // Open clicked item if it wasn't active
-    if (!isActive) {
+// FAQ accordion
+document.querySelectorAll(".faq-item").forEach((item, _, all) => {
+  const q = item.querySelector(".faq-q");
+  q.addEventListener("click", () => {
+    const open = item.classList.contains("active");
+    document.querySelectorAll(".faq-item").forEach((f) => {
+      f.classList.remove("active");
+      f.querySelector(".faq-q").setAttribute("aria-expanded", "false");
+    });
+    if (!open) {
       item.classList.add("active");
+      q.setAttribute("aria-expanded", "true");
     }
   });
 });
 
-// Particle Animation - Autonomous Movement
-const canvas = document.getElementById("particles-canvas");
-const ctx = canvas.getContext("2d");
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
-class Particle {
-  constructor() {
-    this.reset();
-  }
-
-  reset() {
-    this.x = Math.random() * canvas.width;
-    this.y = Math.random() * canvas.height;
-    this.vx = (Math.random() - 0.5) * 0.8;
-    this.vy = (Math.random() - 0.5) * 0.8;
-    this.radius = Math.random() * 2.5 + 1;
-    this.opacity = Math.random() * 0.6 + 0.4;
-  }
-
-  update() {
-    this.x += this.vx;
-    this.y += this.vy;
-
-    // Bounce off edges
-    if (this.x < 0 || this.x > canvas.width) {
-      this.vx *= -1;
-      this.x = Math.max(0, Math.min(canvas.width, this.x));
-    }
-    if (this.y < 0 || this.y > canvas.height) {
-      this.vy *= -1;
-      this.y = Math.max(0, Math.min(canvas.height, this.y));
-    }
-  }
-
-  draw() {
-    ctx.beginPath();
-    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-
-    // Create glowing effect
-    const gradient = ctx.createRadialGradient(
-      this.x,
-      this.y,
-      0,
-      this.x,
-      this.y,
-      this.radius * 3,
-    );
-    gradient.addColorStop(0, `rgba(255, 107, 0, ${this.opacity})`);
-    gradient.addColorStop(0.5, `rgba(255, 107, 0, ${this.opacity * 0.3})`);
-    gradient.addColorStop(1, "rgba(255, 107, 0, 0)");
-
-    ctx.fillStyle = gradient;
-    ctx.fill();
-  }
-}
-
-const particles = [];
-const particleCount = 80;
-
-for (let i = 0; i < particleCount; i++) {
-  particles.push(new Particle());
-}
-
-function animate() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-  particles.forEach((particle) => {
-    particle.update();
-    particle.draw();
+// Pillars: tap to open on touch devices
+document.querySelectorAll(".pillar").forEach((p) => {
+  p.addEventListener("click", () => {
+    p.parentElement.querySelectorAll(".pillar").forEach((o) => o !== p && o.classList.remove("is-open"));
+    p.classList.toggle("is-open");
   });
+});
 
-  requestAnimationFrame(animate);
+// Reveal on scroll
+const reveals = document.querySelectorAll(".reveal");
+if ("IntersectionObserver" in window) {
+  const io = new IntersectionObserver(
+    (entries) =>
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add("in");
+          io.unobserve(e.target);
+        }
+      }),
+    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+  );
+  reveals.forEach((el) => io.observe(el));
+} else {
+  reveals.forEach((el) => el.classList.add("in"));
 }
 
-animate();
-
-window.addEventListener("resize", () => {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-});
+// Floating CTA: hide while the contact section is on screen
+const floatCta = document.querySelector(".float-cta");
+const contact = document.getElementById("contact");
+if (floatCta && contact && "IntersectionObserver" in window) {
+  new IntersectionObserver(
+    ([e]) => floatCta.classList.toggle("is-hidden", e.isIntersecting),
+    { threshold: 0.05 }
+  ).observe(contact);
+}
