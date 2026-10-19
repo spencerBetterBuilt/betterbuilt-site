@@ -33,6 +33,7 @@
   --bb-font: "Schibsted Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bb-mono: "DM Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
   --bb-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --bb-ticker-h: 38px;
 }
 
 *,
@@ -234,6 +235,42 @@ a {
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s;
 }
+/* ---------- Ticker (trust banner above the header) ---------- */
+.ticker {
+  height: var(--bb-ticker-h);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--bb-dark);
+  color: #fff;
+  font-family: var(--bb-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 45s linear infinite;
+}
+.ticker:hover .ticker-track {
+  animation-play-state: paused;
+}
+.ticker-set {
+  display: flex;
+}
+.ticker-set span {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-right: 1.5rem;
+  white-space: nowrap;
+}
+.ticker-set span::before {
+  content: "\25C6";
+  color: var(--bb-accent);
+  font-size: 0.6rem;
+}
 .site-header.scrolled {
   border-bottom-color: var(--bb-line);
 }
@@ -342,7 +379,7 @@ body.menu-open .menu-btn .bars::after {
   inset: 0;
   z-index: 900;
   background: var(--bb-bg);
-  padding: 110px var(--bb-gutter) 2rem;
+  padding: calc(110px + var(--bb-ticker-h)) var(--bb-gutter) 2rem;
   display: grid;
   grid-template-columns: 1.4fr 1fr;
   gap: 3rem;
@@ -446,7 +483,7 @@ section {
 
 /* ---------- Hero ---------- */
 .hero {
-  padding: calc(76px + clamp(4rem, 10vw, 8.5rem)) 0 clamp(3rem, 6vw, 5rem);
+  padding: calc(76px + var(--bb-ticker-h) + clamp(4rem, 10vw, 8.5rem)) 0 clamp(3rem, 6vw, 5rem);
   background: var(--bb-surface);
 }
 .hero-grid {
